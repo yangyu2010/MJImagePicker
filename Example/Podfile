@@ -1,11 +1,27 @@
 use_frameworks!
 
+source 'git@git.musjoy.com:PodSpecs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+inhibit_all_warnings!
+
+
 target 'MJImagePicker_Example' do
-  pod 'MJImagePicker', :path => '../'
+#  pod 'MJImagePicker', :path => '../'
 
-  target 'MJImagePicker_Tests' do
-    inherit! :search_paths
+  
+  
+  pod 'FileSource'                    # 文件操作
+  
+  pod 'MJLocalize'                    # 国际化, 语言处理
+  
+  pod 'WebInterface'                  # 基础网络请求类
+  pod 'MJWebService'                  # 网络处理
+  pod 'MJCacheManager'                # 缓存, UIView加载图片
+  
+  
+  
+  pod 'DBModel/DBItemStore'           # 数据解析, 存储
+  pod 'SDWebImage'                    # 图片加载
 
-    pod 'FBSnapshotTestCase'
-  end
+  
 end

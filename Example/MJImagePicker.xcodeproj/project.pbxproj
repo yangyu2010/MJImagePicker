@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1CBB752E9433ADB7251D8890 /* Pods_MJImagePicker_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE361C8B40A2DE658F1C89BA /* Pods_MJImagePicker_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -22,6 +21,10 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		8604E70E2228CB2A00FB428F /* MJImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8604E7062228CB2A00FB428F /* MJImageLoader.m */; };
+		8604E70F2228CB2A00FB428F /* MJImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8604E7072228CB2A00FB428F /* MJImageModel.m */; };
+		8604E7102228CB2A00FB428F /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 8604E70C2228CB2A00FB428F /* NSString+Category.m */; };
+		8604E7112228CB2A00FB428F /* LCFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8604E70D2228CB2A00FB428F /* LCFileManager.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		F6B5823F20D7F06CBA975569 /* Pods_MJImagePicker_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAFD0E6F874AD070452BABF5 /* Pods_MJImagePicker_Example.framework */; };
 /* End PBXBuildFile section */
@@ -38,7 +41,6 @@
 
 /* Begin PBXFileReference section */
 		06CF2295746355F1C1ECC590 /* MJImagePicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MJImagePicker.podspec; path = ../MJImagePicker.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		2F8913EC8A5AF0A0919301C9 /* Pods-MJImagePicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MJImagePicker_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MJImagePicker_Tests/Pods-MJImagePicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4D6855B9125D55DF0FF439D4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* MJImagePicker_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MJImagePicker_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -61,12 +63,19 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82132BC41B1CA1916873B8C6 /* Pods-MJImagePicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MJImagePicker_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MJImagePicker_Example/Pods-MJImagePicker_Example.release.xcconfig"; sourceTree = "<group>"; };
+		8604E7052228CB2A00FB428F /* MJImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJImageModel.h; sourceTree = "<group>"; };
+		8604E7062228CB2A00FB428F /* MJImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJImageLoader.m; sourceTree = "<group>"; };
+		8604E7072228CB2A00FB428F /* MJImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJImageModel.m; sourceTree = "<group>"; };
+		8604E7082228CB2A00FB428F /* MJImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJImageLoader.h; sourceTree = "<group>"; };
+		8604E70A2228CB2A00FB428F /* NSString+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
+		8604E70B2228CB2A00FB428F /* LCFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCFileManager.h; sourceTree = "<group>"; };
+		8604E70C2228CB2A00FB428F /* NSString+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
+		8604E70D2228CB2A00FB428F /* LCFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCFileManager.m; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A04EA0A51CA12ABFFCB9825 /* Pods-MJImagePicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MJImagePicker_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MJImagePicker_Example/Pods-MJImagePicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BADECCC36A1B2E04716FE6F8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		BAFD0E6F874AD070452BABF5 /* Pods_MJImagePicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MJImagePicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE361C8B40A2DE658F1C89BA /* Pods_MJImagePicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MJImagePicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB3B9840C602D018D0797767 /* Pods-MJImagePicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MJImagePicker_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MJImagePicker_Tests/Pods-MJImagePicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +97,6 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				1CBB752E9433ADB7251D8890 /* Pods_MJImagePicker_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +140,8 @@
 		6003F593195388D20070C39A /* Example for MJImagePicker */ = {
 			isa = PBXGroup;
 			children = (
+				8604E7092228CB2A00FB428F /* Lib */,
+				8604E7042228CB2A00FB428F /* Manager */,
 				6003F59C195388D20070C39A /* MJAppDelegate.h */,
 				6003F59D195388D20070C39A /* MJAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -185,13 +195,33 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		8604E7042228CB2A00FB428F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8604E7052228CB2A00FB428F /* MJImageModel.h */,
+				8604E7062228CB2A00FB428F /* MJImageLoader.m */,
+				8604E7072228CB2A00FB428F /* MJImageModel.m */,
+				8604E7082228CB2A00FB428F /* MJImageLoader.h */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		8604E7092228CB2A00FB428F /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				8604E70A2228CB2A00FB428F /* NSString+Category.h */,
+				8604E70B2228CB2A00FB428F /* LCFileManager.h */,
+				8604E70C2228CB2A00FB428F /* NSString+Category.m */,
+				8604E70D2228CB2A00FB428F /* LCFileManager.m */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
 		DFEE9729B641FFE3DB9189E2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				8A04EA0A51CA12ABFFCB9825 /* Pods-MJImagePicker_Example.debug.xcconfig */,
 				82132BC41B1CA1916873B8C6 /* Pods-MJImagePicker_Example.release.xcconfig */,
-				2F8913EC8A5AF0A0919301C9 /* Pods-MJImagePicker_Tests.debug.xcconfig */,
-				CB3B9840C602D018D0797767 /* Pods-MJImagePicker_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -222,11 +252,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "MJImagePicker_Tests" */;
 			buildPhases = (
-				7C5F38A0B6371AD6DC8E1855 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				43F3288F7952AA8498CAF2EB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -302,33 +330,31 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MJImagePicker_Example/Pods-MJImagePicker_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/MJImagePicker/MJImagePicker.framework",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/DBModel/DBModel.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/FileSource/FileSource.framework",
+				"${BUILT_PRODUCTS_DIR}/MJCacheManager/MJCacheManager.framework",
+				"${BUILT_PRODUCTS_DIR}/MJLocalize/MJLocalize.framework",
+				"${BUILT_PRODUCTS_DIR}/MJWebService/MJWebService.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/WebInterface/WebInterface.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJImagePicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DBModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FileSource.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJCacheManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJLocalize.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJWebService.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebInterface.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MJImagePicker_Example/Pods-MJImagePicker_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		43F3288F7952AA8498CAF2EB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MJImagePicker_Tests/Pods-MJImagePicker_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MJImagePicker_Tests/Pods-MJImagePicker_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		548DECFD05139F241CA551B6 /* [CP] Check Pods Manifest.lock */ = {
@@ -349,24 +375,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7C5F38A0B6371AD6DC8E1855 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MJImagePicker_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -374,9 +382,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8604E7112228CB2A00FB428F /* LCFileManager.m in Sources */,
 				6003F59E195388D20070C39A /* MJAppDelegate.m in Sources */,
+				8604E7102228CB2A00FB428F /* NSString+Category.m in Sources */,
 				6003F5A7195388D20070C39A /* MJViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				8604E70E2228CB2A00FB428F /* MJImageLoader.m in Sources */,
+				8604E70F2228CB2A00FB428F /* MJImageModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,7 +569,6 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F8913EC8A5AF0A0919301C9 /* Pods-MJImagePicker_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -582,7 +593,6 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB3B9840C602D018D0797767 /* Pods-MJImagePicker_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
